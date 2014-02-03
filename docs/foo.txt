@@ -89,14 +89,17 @@ Customize
 
   Renaming foo into your project name
     Rename all files which have *foo* included into your own new package
-    name. You can find them with
+    name. You can do that with:
 
-        find . -name \*foo\*
+        PROJECTNAME=yourproject
+        find . -name \*foo\* | 
+        while read foo; do git mv $foo ${foo/foo/$PROJECTNAME}; done
 
     Search all content and rename *foo* into your own new package name. You
-    can find all files with
+    can do that with:
 
-        grep -R foo . | grep -v .git
+        grep -R foo . | grep -v .git | 
+        cut -d: -f1 | uniq | xargs sed -i "s/foo/$PROJECTNAME/g"
 
   Updating ./debian
     Edit the following files accordingly to your new project (e.g. with
