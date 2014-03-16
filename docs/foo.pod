@@ -105,9 +105,7 @@ Search all content and rename *foo* into your own new package name. You can do t
 
 Edit the following files accordingly to your new project (e.g. with vim):
 
-    ./debian/control
-    ./debian/copyright
-    ./debian/README
+    vim ./debian/{control,copyright,README}
 
 =head2 Update changelog
 
