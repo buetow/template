@@ -6,7 +6,7 @@ all: version docs build
 # Builds the project. Since this is only a fake project, it just copies a script.
 build:
 	cp -p ./src/$(NAME) bin/$(NAME)
-	echo "echo This is version $$(cat .version)" >> bin/$(NAME)
+	sed -i "s/VERSION_DEVEL/$$(cat .version)/" bin/$(NAME)
 	
 # 'install' installes a fake-root, which will be used to build the Debian package
 # $DESTDIR is actually set by the Debian tools.

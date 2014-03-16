@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "Hello World, I am a fake project"
+declare -r VERSION='VERSION_DEVEL'
+
+echo "This is version $VERSION of the example template project."
