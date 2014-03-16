@@ -1,4 +1,4 @@
-Source: foo
+Source: template
 Section: utils
 Priority: optional
 Maintainer: Paul Buetow <paul@buetow.org>
@@ -8,7 +8,7 @@ Homepage: https://template.buetow.org
 Vcs-Git: git://git.buetow.org/template
 Vcs-Browser: http://web.buetow.org/git/?p=template.git;a=summary
 
-Package: foo
+Package: template
 Architecture: all
 Depends:
 Description: Small template package

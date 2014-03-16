@@ -1,4 +1,4 @@
-NAME=foo
+NAME=template
 all: version docs build
 
 # THIS IS NEEDED BY THE DEBIAN TOOLS
