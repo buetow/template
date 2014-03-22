@@ -6,7 +6,8 @@ Build-Depends:
 Standards-Version: 3.9.2
 Homepage: https://template.buetow.org
 Vcs-Git: https://github.com/rantanplan/template
-Vcs-Browser: http://web.buetow.org/git/?p=template.git;a=summary
+Vcs-Browser: https://github.com/rantanplan/template
+Vcs-Browser: https://github.com/rantanplan/template
 
 Package: template
 Architecture: all
