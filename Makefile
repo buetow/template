@@ -1,5 +1,5 @@
 NAME=template
-all: version docs build
+all: version docu build
 
 # THIS IS NEEDED BY THE DEBIAN TOOLS
 
@@ -29,11 +29,12 @@ clean:
 version:
 	cut -d' ' -f2 debian/changelog | head -n 1 | sed 's/(//;s/)//' > .version
 
-# Builds the docs into a manpage
-docs:
+# Builds the docu into a manpage
+docu:
 	pod2man --release="$(NAME) $$(cat .version)" \
 		--center="User Commands" ./docs/$(NAME).pod > ./docs/$(NAME).1
 	pod2text ./docs/$(NAME).pod > ./docs/$(NAME).txt
+	cp ./docs/$(NAME).txt README.txt
 
 # Build a debian package (don't sign it, modify the arguments if you want to sign it)
 deb: all

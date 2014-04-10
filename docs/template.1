@@ -123,8 +123,8 @@
 .rm #[ #] #H #V #F C
 .\" ========================================================================
 .\"
-.IX Title "FOO 1"
-.TH FOO 1 "2014-02-03" "template 0.0.0.0" "User Commands"
+.IX Title "TEMPLATE 1"
+.TH TEMPLATE 1 "2014-04-10" "template 0.0.0" "User Commands"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -254,10 +254,8 @@ Search all content and rename *template* into your own new package name. You can
 .IX Subsection "Updating ./debian"
 Edit the following files accordingly to your new project (e.g. with vim):
 .PP
-.Vb 3
-\&    ./debian/control
-\&    ./debian/copyright
-\&    ./debian/README
+.Vb 1
+\&    vim ./debian/{control,copyright,README}
 .Ve
 .SS "Update changelog"
 .IX Subsection "Update changelog"
