@@ -3,3 +3,5 @@
 declare -r VERSION='VERSION_DEVEL'
 
 echo "This is version $VERSION of the example template project."
+
+# vim: filetyle=sh
