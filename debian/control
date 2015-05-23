@@ -5,8 +5,8 @@ Maintainer: Paul Buetow <paul@buetow.org>
 Build-Depends: 
 Standards-Version: 3.9.2
 Homepage: https://template.buetow.org
-Vcs-Git: https://github.com/rantanplan/template.git
-Vcs-Browser: https://github.com/rantanplan/template
+Vcs-Git: https://github.com/buetow/template.git
+Vcs-Browser: https://github.com/buetow/template
 
 Package: template
 Architecture: all
